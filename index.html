@@ -16,12 +16,29 @@
     header {
       background: #4caf50;
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: relative;
+    }
+    .header-content {
       text-align: center;
-      padding: 2rem 1rem;
+      flex: 1;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1rem;
+      margin: 0.5rem 0 0;
+    }
+    header img {
+      width: 80px; /* adjust size */
+      height: auto;
+      border-radius: 50%; /* makes circular images */
     }
     nav {
       background: #388e3c;
@@ -62,19 +79,26 @@
 </head>
 <body>
   <header>
-    <h1>maomao's bio</h1>
-    <p>"Those engaged in scientific researches constantly show us that they realize not less vividly, but more vividly, than others, the poetry of their subjects."</p>
+    <!-- Left image -->
+    <img src="Isoleucine.jpg" alt="Isoleucine">
+
+    <!-- Center content -->
+    <div class="header-content">
+      <h1>maomao's bio</h1>
+      <p>"Those engaged in scientific researches constantly show us that they realize not less vividly, but more vividly, than others, the poetry of their subjects."</p>
+    </div>
+
+    <!-- Right image -->
+    <img src="flowcytometry.png" alt="Flow Cytometry">
   </header>
 
-    <nav>
+  <nav>
     <a href="index.html">Home</a>
     <a href="competitions.html">Competitions</a>
     <a href="resources.html">Resources</a>
     <a href="blog.html">Blog</a>
     <a href="about.html">About</a>
   </nav>
-
-
 
   <main>
     <section>
@@ -100,6 +124,5 @@
 
   <footer>
     <p>© 2025 maomao's bio | Built with ❤️ for science</p>
-  </footer>
-</body>
-</html>
+  </footer
+
